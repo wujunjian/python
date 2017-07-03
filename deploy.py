@@ -10,9 +10,9 @@ import sys
 dir = sys.argv[1]
 
 def run():
-#	hosts = ["172.31.15.232", "172.31.15.236", "172.31.15.233", "172.31.15.235", "172.31.15.230", "172.31.15.229", "172.31.15.237", "172.31.15.231"]
+#	hosts = [""]
 
-	hosts = ["54.200.162.83"]
+	hosts = ["127.0.0.1"]
 	send_to_hosts(hosts)
 
 
@@ -30,7 +30,7 @@ def send_to_hosts(hosts):
 
 def send(host):
 	ftp = ftplib.FTP()
-	ftp.connect(host, 7721, 60)
+	ftp.connect(host, 21, 60)
 	ftp.login('user', 'passwd')
 	sendfiles(ftp)
 
