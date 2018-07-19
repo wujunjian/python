@@ -4,7 +4,7 @@ def make_md5(s, encoding='utf-8'):
     return md5(s.encode(encoding)).hexdigest()
 
 client_id = 'dappbrowser';
-key = 'ebS@p1wNyHN9WlR7';
+key = '';
 url = 'https://cmpush-api.ksmobile.net/api/openpush/devices_push';
 device_list = '98b2d0e9061af4d6';
 device_type = 'mi_aid';
